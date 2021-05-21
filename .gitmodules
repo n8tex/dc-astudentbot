@@ -1,0 +1,3 @@
+[submodule "static_data/ubc"]
+	path = static_data/ubc
+	url = https://github.com/UBCGeodata/ubc-geospatial-opendata.git
