@@ -69,6 +69,7 @@ client.on('message', async message => {
     ]
 
     const command = await client.guilds.cache.get(serverID)?.commands.set(data);
+    const commandGlobal = await client.application?.commands.set(data);
     console.log(command);
   }
 });
