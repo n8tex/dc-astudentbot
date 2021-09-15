@@ -119,6 +119,7 @@ async function createStopList(searchQuery) {
 
 // Translink ETA Lookup
 async function createDepartureList(stopNum) {
+  return warnEmoji + " This command is under maintenance."; //!!!
   if (String(stopNum).length != 5) return warnEmoji + " Stop numbers must consist of 5 digits."
   const stopInfo = await nextBus.stop(stopNum);
   const listOfDepartures = stopInfo[0].Schedules;
